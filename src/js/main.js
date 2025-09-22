@@ -73,3 +73,13 @@ const navMenu = document.querySelector(".nav-links");
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
+
+const navMenuLinks = document.querySelectorAll(".nav-links a");
+
+navMenuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        if (navMenu.classList.contains("active")) {
+            navMenu.classList.remove("active");
+        }
+    });
+});
