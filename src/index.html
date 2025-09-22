@@ -4,10 +4,171 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <title>Henry Li Personal Website</title>
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <!-- <h1>Hello World! Welcome to MP1!</h1>
+        <img src="assets/image.jpg"> -->
+
+        <!-- navbar -->
+        <header id="navbar">
+            <div class="nav-container">
+                <img src="assets/logo.png" alt="Logo" class="logo">
+                
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#ai-painting">AI Painting</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- home -->
+        <section id="home">
+            <div class="home-content">
+            <img src="assets/picture.png" alt="Profile Photo" class="profile-pic fade-in">
+            <h1>Henry Li</h1>
+            <p>Hi there! My name is Henry Li, and I'm a Master of Computer Science student at UIUC.</p>
+            <p>I am interested in full-stack development and AI.</p>
+            <div class="social">
+                <!-- <a href="https://github.com/henryle1" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/hryle/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a> -->
+
+                <a href="https://github.com/henryle1" target="_blank">
+                    <img src="assets/github.png" alt="GitHub Logo" class="social-icon"> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/hryle/" target="_blank">
+                    <img src="assets/linkedin.png" alt="LinkedIn Logo" class="social-icon"> LinkedIn
+                </a>
+            </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="education">
+            <!-- <h2>Education</h2> -->
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul>
+                <li>
+                <strong>University of Illinois Urbana-Champaign</strong><br>
+                Master of Computer Science, August 2025 - May 2026 (expected)<br>
+                </li>
+                <li>
+                <strong>University of Illinois Urbana-Champaign</strong><br>
+                Bachelor of Science in Computer Science and Statistics, August 2022 - May 2025<br>
+                </li>
+                <!-- <li>
+                    Relative Coursework: Deep Learning for Computer Vision, Natural Language Processing, Algorithms, Database Systems, Programming Languages and Compilers, System Programming, Communication Networks, Computer Security, Data Mining, Probability and Statistics
+                </li> -->
+            </ul>
+            <!-- Modal trigger -->
+            <button id="openModal">View More</button>
+                
+            </div>
+        </section>
+
+        <section id="ai-painting">
+            <div class="card">
+                <h2>AI Painting</h2>
+                <p>Here are some AI-generated artworks using <strong>OpenAI Sora</strong>.</p>
+
+                <!-- Carousel for images -->
+                <div class="carousel">
+                <div class="slides">
+                    <div class="slide">
+                        <!-- <h3>Prompt: </h3> -->
+                        <p>Prompt: "A giraffe flying a helicopter to deliver takeout, holding a pizza in its mouth."</p>
+                        <img src="assets/image1.png" alt="AI Art 1">
+                    </div>
+
+                    <div class="slide">
+                        <p>Prompt: "A group of dinosaurs partying in a disco club, wearing shiny outfits, with a turtle as the DJ."</p>
+                        <img src="assets/image2.png" alt="AI Art 2">
+                    </div>
+
+                    <div class="slide">
+                        <p>Prompt: "A group of aliens working at a fast-food restaurant, serving fried chicken to humans in line."</p>
+                        <img src="assets/image3.png" alt="AI Art 3">
+                    </div>
+
+                    <div class="slide">
+                        <p>Prompt: "A Samoyed dog riding a shiny motorcycle at full speed on a highway, chased by dozens of police cars."</p>
+                        <img src="assets/image4.png" alt="AI Art 4">
+                    </div>
+
+                    <div class="slide">
+                        <!-- <h3>Prompt: </h3> -->
+                        <p>Prompt: "A dog in a spacesuit chasing alien spacecraft on the moon, explosions, lasers, sci-fi style."</p>
+                        <img src="assets/image5.png" alt="AI Art 5">
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="mul-slide">
+                <img src="assets/image6.png" alt="Multiple Slides 1">
+                <img src="assets/image7.png" alt="Multiple Slides 2">
+                <img src="assets/image8.png" alt="Multiple Slides 3">
+                <img src="assets/image9.png" alt="Multiple Slides 4">
+                <img src="assets/image10.png" alt="Multiple Slides 5">
+                <img src="assets/image11.png" alt="Multiple Slides 6">
+                <img src="assets/image12.png" alt="Multiple Slides 7">
+            </div>
+
+            <!-- Video section (separate card) -->
+            <div class="card">
+                <h2>AI Video</h2>
+                <div class="ai-video">
+                    <!-- <h3>Prompt: </h3> -->
+                    <p>Prompt: "A surreal POV selfie shot shows a cute baby micro pig with an eagle during an exhilarating skydiving adventure. The breathtaking aerial perspective reveals a vast Alpine landscape below, with snow-capped peaks and lush green valleys. The pig's fur ripples chaotically in the extreme wind, and its wide-open mouth displays an expression of sheer exhilaration mixed with absurdity. Its lips and cheeks flutter wildly as the intense winds distort its face in humorous, exaggerated ways. Bright sunlight highlights the scene, with the pig as the undeniable focal point."</p>
+                    <video autoplay muted loop playsinline width="600">
+                        <source src="assets/video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Relative Coursework</h2>
+                <ul>
+                    <li>Deep Learning for Computer Vision</li>
+                    <li>Natural Language Processing</li>
+                    <li>Algorithms</li>
+                    <li>Database Systems</li>
+                    <li>Programming Languages and Compilers</li>
+                    <li>System Programming</li>
+                    <li>Communication Networks</li>
+                    <li>Computer Security</li>
+                    <li>Data Mining</li>
+                    <li>Probability and Statistics</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2025 Henry Li</p>
+                <p>Email: lheng1132@gmail.com</p>
+            </div>
+        </footer>
+
     </body>
 </html>
