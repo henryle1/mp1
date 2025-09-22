@@ -83,3 +83,28 @@ navMenuLinks.forEach(link => {
         }
     });
 });
+
+// Image Modal
+const imageModal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImageContent");
+const galleryImages = document.querySelectorAll(".mul-slide img");
+const closeModalSpan = document.querySelector(".close-modal");
+
+galleryImages.forEach(img => {
+    img.addEventListener("click", function() {
+        imageModal.style.display = "flex"; 
+        modalImage.src = this.src; 
+    });
+});
+
+function closeModal() {
+    imageModal.style.display = "none";
+}
+
+closeModalSpan.onclick = closeModal;
+
+imageModal.addEventListener("click", function(event) {
+    if (event.target === imageModal) { 
+        closeModal();
+    }
+});
